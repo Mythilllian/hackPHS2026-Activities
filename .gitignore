@@ -1,0 +1,8 @@
+# Claude
+.agents
+skills-lock.json
+
+# DataAnalytics
+credentials.json
+.cache
+chart.png
