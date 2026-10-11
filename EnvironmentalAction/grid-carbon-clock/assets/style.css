@@ -1,0 +1,54 @@
+:root { color-scheme: dark; }
+body, .gradio-container { background: #0b1217 !important; color: #e6edf3; }
+.gradio-container { max-width: 1180px !important; margin: 0 auto !important; }
+
+/* header */
+.hero { background: linear-gradient(135deg, #062b2a 0%, #0b5a55 60%, #0f766e 100%); border: 1px solid #14504b;
+        border-radius: 22px; padding: 30px 34px; margin: 6px 0 18px; }
+.hero h1 { font-size: 2.1rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 4px; color: #fff; }
+.hero p { margin: 0 0 18px; color: #b7d8d4; font-size: 1.02rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 999px;
+        padding: 6px 14px; font-size: .86rem; color: #e6edf3; }
+.chip b { color: #fff; }
+
+/* cards */
+.card { background: #121c24; border: 1px solid #1f2e39; border-radius: 18px; padding: 22px 24px; }
+.eyebrow { font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #8b9bab; }
+.big { font-size: 3.1rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; color: #2dd4bf; margin: 4px 0 2px; }
+.big small { font-size: 1rem; font-weight: 500; color: #8b9bab; letter-spacing: 0; margin-left: 6px; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+.stat { background: #0f1820; border: 1px solid #1b2a36; border-radius: 12px; padding: 12px 14px; }
+.stat b { display: block; font-size: 1.3rem; font-weight: 700; color: #e6edf3; }
+.stat span { font-size: .78rem; color: #8b9bab; }
+.stat.good { background: #0f2a29; border-color: #14504b; } .stat.good b { color: #2dd4bf; }
+.tag { display: inline-block; margin: 14px 6px 0 0; font-size: .78rem; color: #b6c2cf; background: #1b2a36; border-radius: 999px; padding: 4px 12px; }
+.prose, .summary { font-size: .95rem; line-height: 1.6; color: #b6c2cf; }
+.prose b, .summary b { color: #e6edf3; }
+
+/* warnings about long-range forecasts */
+.notice { border-radius: 14px; padding: 13px 16px; font-size: .9rem; line-height: 1.45; margin-bottom: 14px; }
+.notice.caution { background: #2a2110; border: 1px solid #6b5320; color: #f5d28a; }
+.notice.warning { background: #2b1414; border: 1px solid #7a2e2a; color: #f5b5ae; }
+
+button.primary { border-radius: 12px !important; font-weight: 600 !important; }
+button[role="tab"] { font-weight: 600 !important; }
+
+/* accuracy tables (!important beats Gradio's own table borders) */
+.card .table { width: 100%; border-collapse: collapse; margin: 10px 0 4px; font-size: .9rem; border: none !important; }
+.card .table th, .card .table td { border: none !important; border-bottom: 1px solid #1f2e39 !important; padding: 9px 10px; text-align: left; }
+.card .table th { font-weight: 600; color: #8b9bab; font-size: .78rem; }
+.card .table td { color: #e6edf3; }
+.card .table tr:last-child td { border-bottom: none !important; }
+.card .table tr { border: none !important; }
+
+/* findings and models pages */
+.gap { margin-top: 16px; }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.kpis .stat b { font-size: 1.6rem; color: #2dd4bf; }
+.card .table tr.pick td { background: #0f2a29; color: #2dd4bf; font-weight: 600; }
+.table + p, .card p + .table { margin-top: 10px; }
+@media (max-width: 800px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
+details { margin-top: 12px; }
+summary { cursor: pointer; color: #2dd4bf; font-weight: 600; font-size: .9rem; }
+details p { margin: 10px 0 0; }

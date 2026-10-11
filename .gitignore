@@ -1,3 +1,6 @@
+# General
+venv
+
 # Claude
 .agents
 skills-lock.json
@@ -6,3 +9,10 @@ skills-lock.json
 credentials.json
 .cache
 chart.png
+
+# EnvironmentalAction
+.venv/
+__pycache__/
+.pytest_cache/
+data/raw/PJM.xlsx
+data/raw/*.parquet

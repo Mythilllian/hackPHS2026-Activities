@@ -1,0 +1,34 @@
+{
+  "starts": 11,
+  "horizon_days": 30,
+  "buckets": {
+    "1-2 days": {
+      "mae_model": 11.06700686472788,
+      "mae_baseline": 16.62974597656277,
+      "within_1h_model": 0.6363636363636364,
+      "within_1h_baseline": 0.7272727272727273,
+      "hours": 528
+    },
+    "3-7 days": {
+      "mae_model": 15.906733354697705,
+      "mae_baseline": 20.67408120043602,
+      "within_1h_model": 0.5454545454545454,
+      "within_1h_baseline": 0.6136363636363636,
+      "hours": 1320
+    },
+    "8-14 days": {
+      "mae_model": 19.420242741935503,
+      "mae_baseline": 21.65168328299129,
+      "within_1h_model": 0.696969696969697,
+      "within_1h_baseline": 0.7121212121212122,
+      "hours": 1848
+    },
+    "15-30 days": {
+      "mae_model": 16.952235185865728,
+      "mae_baseline": 26.79517365086508,
+      "within_1h_model": 0.6606060606060606,
+      "within_1h_baseline": 0.7272727272727273,
+      "hours": 4224
+    }
+  }
+}
